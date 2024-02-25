@@ -1,3 +1,4 @@
+
 body{
     font-style: Arial;
     font-size: 12pt;
@@ -6,8 +7,6 @@ body{
 }
 h1 {
     background-color: rgb(78, 78, 221);
-    margin-left: 250px;
-    margin-right: 250px;
     font-style: Arial;
     font-size: 30pt;
     -webkit-text-fill-color: azure;
@@ -37,3 +36,70 @@ table {
     margin: 5px;
     color: black;
 }
+#enlarged-image {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    margin-right: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: block;
+  }
+
+  a:hover {
+    background-color: #443055;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #7700ff;
+  }
+
