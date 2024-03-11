@@ -1,0 +1,133 @@
+<form id="myform">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Needs Analysis Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/Form.css">
+    <script src="Lab6.js" type="text/javascript"></script>
+</head>
+<!-- The heading of the survery -->
+    <h1>Needs Analysis Survey</h1>
+    <hr>
+                    <form id="myform">
+                        <p>
+                            <!--Using Prompt user to enter their name, age and field of work it's all required as it is vital information -->
+                            <label for="Name">Name:</label>
+                            <input id="Name" type="text" required>
+                        </p>
+                        <p>
+                            <label for="Age">Age:</label>
+                            <input id="Age" type="number" required>
+                        </p>
+                            <label for="FieldofWork">Field of Work:</label>
+                            <input id="FieldofWork" type="text" required>
+                        <p>
+                             <!--Checkboxes to give users multiple options -->
+                            <b>Which Application do you use </b> <br> <br>
+                            <input type="Checkbox" value="Entertainment" name="Application" onclick="answerHandler('ApplicationVal', this.value)"> Entertainment, (gaming, online streaming)
+                            <br> 
+                            <input type="Checkbox" value="Informative" name="Application" onclick="answerHandler('ApplicationVal', this.value)"> Informative, (News, research articles)
+                            <br> 
+                            <input type="Checkbox" value="ECommerce" name="Application" onclick="answerHandler('ApplicationVal', this.value)"> ECommerce, (Amazon)
+                            <br> 
+                            <input type="Checkbox" value="Social media" name="Application" onclick="answerHandler('ApplicationVal', this.value)"> Social media, (Instagram, discord)
+                            <br> 
+                        </p>
+                        <p>
+                             <!-- Label to ensure the multiple choice option is horizontal is horizontal -->
+                            <b>Level of Computer Competency Required for the Job</b> 
+                            <br>
+                            <br>
+                            <label>Level:</label>
+                              <label>
+                                <input type="radio" value="Very low" name="Competency" onclick="answerHandler('CompetencyVal', this.value)"> Very low
+                              </label>
+                              <label>
+                                <input type="radio" value="Low" name="Competency" onclick="answerHandler('CompetencyVal', this.value)"> Low
+                              </label>
+                              <label>
+                                <input type="radio" value="Medium" name="Competency" onclick="answerHandler('CompetencyVal', this.value)"> Medium
+                              </label>
+                              <label>
+                                <input type="radio" value="High" name="Competency" onclick="answerHandler('CompetencyVal', this.value)"> High
+                              </label>
+                              <label>
+                                <input type="radio" value="Very high" name="Competency" onclick="answerHandler('CompetencyVal', this.value)"> Very high
+                              </label>
+                        </p>
+                        <p>
+                            <b>Which Type of Web design is most preferred</b> 
+                            <br>
+                            <br>
+                            <input type="radio" value="Minimalism" name="Design" onclick="answerHandler('DesignVal', this.value)"> Minimalism (Simple design with an emphasis on important information)
+                            <br> 
+                            <input type="radio" value="Dynamic" name="Design" onclick="answerHandler('DesignVal', this.value)"> Dynamic, (Interactive elements such as animated logos)
+                            <br> 
+                            <input type="radio" value="Static" name="Design" onclick="answerHandler('DesignVal', this.value)"> Static, (Similar to news articles with no interactive elements)
+                            <br> 
+                            <input type="radio" value="Crowded Design" name="Design" onclick="answerHandler('DesignVal', this.value)"> Crowded Design, (An explosion of information everywhere commonly used in Asia)
+                            <br> 
+                        </p>
+                        <p>
+                            <b>What Color Scheme of Web design is most preferred</b> <br> <br>
+                            <input type="radio" value="Dark theme" name="Scheme" onclick="answerHandler('SchemeVal', this.value)"> Dark theme, (black, dark grey)
+                            <br> 
+                            <input type="radio" value="Light theme" name="Scheme" onclick="answerHandler('SchemeVal', this.value)"> Light theme, (White, light grey)
+                            <br> 
+                            <input type="radio" value="High contrast" name="Scheme" onclick="answerHandler('SchemeVal', this.value)"> High contrast, (Black, white)
+                            <br> 
+                            <input type="radio" value="Vibrant" name="Scheme" onclick="answerHandler('SchemeVal', this.value)"> Vibrant, (A wide mix of colors such as blue green and red)
+                            <br> 
+                        </p>
+                       <b>Are you likely to take time to look at the personal website of an applicant</b> 
+                            <br> <br>
+                            <label>Likeliness</label>
+                              <label>
+                                <input type="radio" value="Very not likely" name="Likeliness" onclick="answerHandler('LikelinessVal', this.value)"> Very low
+                              </label>
+                              <label>
+                                <input type="radio" value="Not likely" name="Likeliness" onclick="answerHandler('LikelinessVal', this.value)"> Low
+                              </label>
+                              <label>
+                                <input type="radio" value="Somewhat likely" name="Likeliness" onclick="answerHandler('LikelinessVal', this.value)"> Medium
+                              </label>
+                              <label>
+                                <input type="radio" value="Likely" name="Likeliness" onclick="answerHandler('LikelinessVal', this.value)"> High
+                              </label>
+                              <label>
+                                <input type="radio" value="Very likely" name="Likeliness" onclick="answerHandler('LikelinessVal', this.value)"> Very high
+                              </label>
+                        <p>
+                            <b>Does having a personal website impact hiring decisions</b> 
+                            <br> <br>
+                            <label>Level of impact:</label>
+                              <label>
+                                <input type="radio" value="Very low" name="Level" onclick="answerHandler('LevelVal', this.value)"> Very low
+                              </label>
+                              <label>
+                                <input type="radio" value="Low" name="Level" onclick="answerHandler('LevelVal', this.value)"> Low
+                              </label>
+                              <label>
+                                <input type="radio" value="Medium" name="Level" onclick="answerHandler('LevelVal', this.value)"> Medium
+                              </label>
+                              <label>
+                                <input type="radio" value="High" name="Level" onclick="answerHandler('LevelVal', this.value)"> High
+                              </label>
+                              <label>
+                                <input type="radio" value="Very hig" name="Level" onclick="answerHandler('LevelVal', this.value)"> Very high
+                              </label>
+                        </p>
+                       
+                        <p>
+                            <b>Additional things you would like to add</b> <br>
+                            <textarea class="u-full-width" placeholder="Additional things" id="feedback"></textarea>
+                        </p>
+                        <input class="button-primary" type="submit" value="Submit" onclick="saveAnswers()">
+                        <input type="reset">
+                    </form>
+</form>
